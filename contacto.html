@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bienes Raices :: Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabeceraTodos">
+        <!--inicio header-->
+        <a href="index.html"><img class="logo" src="img/iconos/logo.svg" alt="Logo Bienes Raices"></a>
+
+        <nav class="menuHeader">
+            <ul>
+                <li><a href="nosotros.html"> Nosotros </a></li>
+                <li><a href="anuncios.html"> Anuncios </a></li>
+                <li><a href="#"> Blog </a></li>
+                <li><a href="contacto.html"> Contacto </a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--fin header-->
+
+    <section class="contacto">
+        <!--inicio section 1-->
+        <h2>Contacto</h2>
+        <img src="img/contact/destacada3.jpg" alt="imagen contacto">
+    </section>
+    <!--fin section 1-->
+
+    <section class="formulario">
+        <!--inicio section 2-->
+        <h2>Llena el Formulario de Contacto</h2>
+        <form>
+            <article>
+                <!--formulario informacion personal-->
+                <fieldset>
+                    <legend>
+                        Información Personal
+                    </legend>
+
+                    <label>Nombre: </label>
+                    <input type="text" placeholder="Tu Nombre" required>
+
+                    <label>E-mail: </label>
+                    <input type="email" placeholder="Tu Email" required>
+
+                    <label>Teléfono: </label>
+                    <input type="tel" placeholder="Tu Teléfono" required>
+
+                    <label>Mensaje: </label>
+                    <textarea></textarea>
+                </fieldset>
+            </article>
+            <!--fin formulario informacion personal-->
+
+            <article>
+                <!--formulario informacion propiedad-->
+                <fieldset>
+                    <legend>Información sobre Propiedad</legend>
+
+                    <label>Vende o Compra:</label>
+                    <select>
+                        <option selected disabled required> -- Seleccione -- </option>
+                        <option> Vende </option>
+                        <option> Compra </option>
+                    </select>
+
+                    <label>Presupuesto:</label>
+                    <input type="number" required>
+                </fieldset>
+            </article>
+            <!--fin formulario informacion propiedad-->
+
+            <article>
+                <!--formulario contacto-->
+                <fieldset>
+                    <legend>Contacto</legend>
+
+                    <p>Como desea ser Contactado:</p>
+
+                    <div class="radioButton">
+                        <label>Teléfono</label>
+                        <input type="radio" name="contacto" required>
+
+                        <label>Correo</label>
+
+                        <input type="radio" name="contacto" required>
+                    </div>
+
+                    <p>Si Eligió Teléfono, elija la Fecha y Hora</p>
+                    <label>Fecha</label>
+                    <input type="date">
+
+
+                    <label>Hora:</label>
+                    <input type="time">
+
+
+                    <input type="submit" value="ENVIAR">
+                </fieldset>
+            </article>
+            <!--fin formulario contacto-->
+    </section>
+    <!--fin section 2-->
+
+    <footer>
+        <!--inicio footer-->
+        <nav class="menuFooter">
+            <ul>
+                <li><a href="nosotros.html"> Nosotros </a></li>
+                <li><a href="anuncios.html"> Anuncios </a></li>
+                <li><a href="#"> Blog </a></li>
+                <li><a href="contacto.html"> Contacto </a></li>
+            </ul>
+        </nav>
+
+            <p class="derechos"> Todos Los Derechos Reservados © </p>
+    </footer>
+    <!--fin footer-->
+
+
+
+</body>
+
+</html>

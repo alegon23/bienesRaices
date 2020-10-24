@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*---------------------------------------------------INDEX---------------------------------------------------*/
+
+/*HEADER*/
+
+.HeaderIndex{
+    background: url(img/home/header.jpg) no-repeat center center;
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 280px;
+}
+
+.menuHeaderIndex ul li, .textoMain1 ul li, .menuFooter ul li, .menuHeader ul li, .textoMain2 ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.menuHeaderIndex a, .menuFooter a, .menuHeader a{
+    text-decoration: none;
+    color: white;
+    font-size: 11pt;
+}
+
+.menuHeaderIndex a:hover, .menuFooter a:hover, .menuHeader a:hover{
+    text-decoration: underline;
+}
+
+.menuHeaderIndex a:active, .menuFooter a:active, .menuHeader a:active{
+    color: #DF8716;
+}
+
+.menuHeaderIndex a:visited, .menuFooter a:visited, .menuHeader a:visited{
+    color: lightgreen;
+}
+
+.arriba{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.abajo h2{
+    color: white;
+    padding-left: 200px;
+    padding-bottom: 20px;
+}
+
+/*FIN HEADER*/
+
+/*SECTION 1: SEGURIDAD, PRECIO, A TIEMPO + MAIN*/
+
+.sobreNosotros, .anunciosMain{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobreNosotros h2, .anunciosMain h2, .conoceNosotros h2,.contacto h2, .formulario h2{
+    font-weight: lighter;
+    text-align: center;
+    margin: 50px 0px 0px;
+    font-size: 20pt;
+}
+
+.seg,.precio{
+    width: 80px;
+}
+
+.reloj{
+    width: 60px;
+}
+
+.textoNosotros, .textoMain1,.textoMain2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoNosotros article, .textoMain1 article,.textoMain2 article{
+    width: 25%;
+    text-align: center;
+    margin: 30px;
+}
+
+.textoNosotros article h3, .textoMain1 article h3,.textoMain2 article h3{
+    margin: 20px 0px;
+    font-size: 18pt;
+}
+
+.textoNosotros article p{
+    text-align: justify;
+    line-height: 30px;
+    margin: 10px;
+}
+
+/*MAIN*/
+
+.imgAnuncio{
+    width: 350px;
+}
+
+.textoMain1 article,.textoMain2 article{
+    margin: 5px;
+    border: 1px solid lightgray;
+    background-color: #F5F5F5;
+    width: 350px;
+    height: 80vh;
+}
+
+.textoMain1 article h3,.textoMain2 article h3{
+    font-weight: lighter;
+    text-align: left;
+    margin: 20px 10px 0px;
+}
+
+.descripcion,.precioAnuncio{
+    font-size: 10pt;
+    text-align: left;
+    line-height: 25px;
+    margin: 10px 10px 0px;
+}
+
+.precioAnuncio{
+    font-weight: bold;
+    color: #71B11F;
+    margin: 0px 10px 10px;
+}
+
+.boton_n a{
+    padding: 10px 100px;
+    background-color: #DF8716;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 25px;
+}
+
+.boton_n a:hover,.boton_encuentra a:hover{
+    background-color: #B26C11;
+}
+
+
+.boton_v a{
+    padding: 10px 30px;
+    background-color: #71B11F;
+    text-decoration: none;
+    color: white;
+    text-align: right;
+    position: relative;
+    top: 40px;
+    left: 460px;
+}
+
+.boton_v a:hover, .formulario article input[type=submit]:hover{
+    background-color: #5A8D18;
+}
+
+/*FIN MAIN*/
+
+/*SECTION: ENCUENTRA*/
+.encuentra{
+    margin-top: 80px;
+    background: url(img/home/encuentra.jpg) no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 150px;
+    color: white;
+}
+
+.encuentra h2{
+    position: relative;
+    bottom: 40px;
+    font-size: 20pt;
+}
+
+.boton_encuentra a{
+    padding: 15px 25px;
+    background-color: #DF8716;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 60px;
+}
+
+/*FIN ENCUENTRA*/
+
+/*SECCION 3*/
+
+.blogTest{ /*section -> TODO */
+    /*margin-top: 30px;*/
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 50px 100px 20px;
+}
+
+.blogTest h2{
+    font-weight: lighter;
+    font-size: 25pt;
+    margin-bottom: 20px;
+}
+
+.nuestroBlog{ /*article -> TODO LO DEL BLOG*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.articuloBlog img{
+    width: 250px;
+}
+
+.articuloBlog{ /*div -> CADA ARTICULO*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.articuloBlog div{ /*TEXTO DEL ARTICULO*/
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 30px;
+    height: 180px;
+}
+
+.articuloBlog div h3{
+    font-size: 18pt;
+    line-height: 30px;
+
+    display: inline-block; /*para linea verde*/
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.articuloBlog div h3:before{ /*linea verde*/
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 1px;
+    bottom: 0;
+    left: 0%;
+    border-bottom: 5px solid #71B11F;
+}
+
+
+.articuloBlog div p{
+    font-size: 10.5pt;
+    margin-top: 15px;
+}
+
+
+.articuloBlog div p a{
+    color: #DF8716;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.articuloBlog div p a:visited{
+    color: #71B11F;
+}
+
+.articuloBlog div p a:active{
+    color: black;
+}
+
+
+.testimoniales{ /*article*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+
+.testimoniales blockquote{
+    margin-top: 20px;
+    background-color: #71B11F;
+    border-radius: 15px;
+    color: white;
+    padding: 30px 30px 15px;
+
+    font-size: 15pt;
+    font-weight: lighter;
+    line-height: 40px;
+    
+
+    height: 60%;
+    width: 90%;
+}
+
+.frase{
+    text-align: justify;
+    margin: 55px 55px 0px;
+    display: block;
+    position: relative;
+    bottom: 100px;
+    left: 10px;
+}
+
+.autor{
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    position: relative;
+    bottom: 80px;
+}
+
+.blockquote img{
+    width: 40px;
+}
+/*FIN SECCION 3*/
+
+/*FOOTER*/
+footer,.cabeceraTodos{
+    height: 80px;
+    background-color: #323232;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 11pt;
+}
+
+/*-------------------------------------------------NOSOTROS--------------------------------------------------*/
+
+.conoceNosotros{ /*section*/
+    display: flex;
+    flex-direction: column;    
+}
+
+.conoceNosotros article{ 
+    margin: 30px 150px;
+    display: flex;
+}
+
+.conoceNosotros article img{
+    width: 500px;
+    margin: 0px 20px;
+}
+
+.experiencia h3 {
+    margin: 30px 0px;
+}
+
+.experiencia p{
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+/*-----------------------------------------------CONTACTO----------------------------------------------------*/
+
+.contacto img{
+    height: 80vh;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.formulario h2{
+    margin-bottom: 30px;
+}
+
+.formulario article{
+    margin: 0px 300px 10px;
+}
+
+.formulario article legend{
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 16pt;
+}
+
+.formulario article fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.formulario article label {
+    margin: 10px 10px 0px;
+    font-size: 11pt;
+}
+
+.formulario article p{
+    margin: 15px 10px 15px;
+    font-size: 11pt;
+}
+
+.formulario article ::placeholder, .formulario article select{
+    font-size: 11pt;
+}
+
+.formulario article input, .formulario article textarea, .formulario article select {
+    width: 97%;
+    height: 40px;
+    margin: 5px 10px 20px;
+    background-color: lightgray;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.formulario article input[type=submit]{
+    background-color: #71B11F;
+    color: white;
+    font-size: 13pt;
+    margin-top: 50px;
+    width: 130px;
+}
+
+
+.formulario article textarea{
+    height: 150px;
+    resize: none;
+}
+
+.radioButton{
+    margin-top: 30px;
+    width: 18px;
+    height: 150px;
+}
